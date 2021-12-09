@@ -81,7 +81,7 @@
 					</li>
 
 					<li>
-						<a href="#">Contact</a>
+						<a href="{{ path('contact') }}">Contact</a>
 					</li>
 					<li>
 						<a href="{{ path('home') }}" class="getstarted">Accueil</a>
@@ -95,7 +95,7 @@
 	</header>
 	<!-- End Header -->
 
-
+	
 	{% block javascripts %}
 		{#{{ encore_entry_script_tags('app') }}#}
 	{% endblock %}
@@ -111,104 +111,10 @@
 	<!-- Template Main JS File -->
 	<script src="{{asset('assets/js/main.js')}}"></script>
 
-	{% block body %}{% endblock %}
+{% block body %}{% endblock %}
 	<!-- ======= Footer ======= -->
 	<footer id="footer">
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-lg-3 col-md-6">
-						<div class="footer-info">
-							<h3>G&S</h3>
-							<p>
-
-								Dakar, Sénégal<br><br>
-								<strong>Téléphone:</strong>
-								+221774366514<br><br>
-								<strong>Email:</strong>
-								gabilau2406@gmail.com<br><br>
-							</p>
-							<div class="social-links mt-3">
-
-								<a href="#" class="facebook">
-									<i class="bx bxl-facebook"></i>
-								</a>
-								<a href="#" class="whatsapp">
-									<i class="bx bxl-whatsapp"></i>
-								</a>
-								<a href="#" class="google-plus">
-									<i class="bx bxl-skype"></i>
-								</a>
-								<a href="#" class="linkedin">
-									<i class="bx bxl-linkedin"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-2 col-md-6 footer-links">
-						<h4>Useful Links</h4>
-						<ul>
-							<li>
-								<i class="bx bx-chevron-right"></i>
-								<a href="#">Accueil</a>
-							</li>
-							<li>
-								<i class="bx bx-chevron-right"></i>
-								<a href="#">Inscription</a>
-							</li>
-							<li>
-								<i class="bx bx-chevron-right"></i>
-								<a href="#">Connexion</a>
-							</li>
-							<li>
-								<i class="bx bx-chevron-right"></i>
-								<a href="#">Contact</a>
-							</li>
-
-						</ul>
-					</div>
-
-					<div class="col-lg-3 col-md-6 footer-links">
-						<h4>Nos Services</h4>
-						<ul>
-							<li>
-								<i class="bx bx-chevron-right"></i>
-								<a href="#">Informatique</a>
-							</li>
-							<li>
-								<i class="bx bx-chevron-right"></i>
-								<a href="#">Electroménager</a>
-							</li>
-							<li>
-								<i class="bx bx-chevron-right"></i>
-								<a href="#">Electronique</a>
-							</li>
-							<li>
-								<i class="bx bx-chevron-right"></i>
-								<a href="#">Electricité</a>
-							</li>
-							<li>
-								<i class="bx bx-chevron-right"></i>
-								<a href="#">Mécanique</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="col-lg-4 col-md-6 footer-newsletter">
-						<h4>Boite à lettre</h4>
-						<p>pour tous suggestions et critiques, veuillez nous envoyez un message</p>
-						<form action="" method="post">
-							<input type="email" name="email"><input type="submit" value="Soumettre">
-						</form>
-
-					</div>
-
-				</div>
-			</div>
-		</div>
-
+		
 		<div class="container">
 			<div class="copyright">
 				&copy; Copyright

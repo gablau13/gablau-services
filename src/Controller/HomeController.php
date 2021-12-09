@@ -15,4 +15,15 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+    #[Route('/contact', name: 'contact')]
+    public function contact(): Response
+    {
+        return $this->render('home/contact.html.twig', [
+            'controller_name' => 'HomeController',
+        ]);
+    }
 }
+
+
+
+    
