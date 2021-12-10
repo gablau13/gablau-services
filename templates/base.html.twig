@@ -94,11 +94,9 @@
 		</div>
 	</header>
 	<!-- End Header -->
-
+<main>
+	{% block body %}{% endblock %}
 	
-	{% block javascripts %}
-		{#{{ encore_entry_script_tags('app') }}#}
-	{% endblock %}
 
 
 	<!-- Vendor JS Files -->
@@ -111,7 +109,7 @@
 	<!-- Template Main JS File -->
 	<script src="{{asset('assets/js/main.js')}}"></script>
 
-{% block body %}{% endblock %}
+</main>
 	<!-- ======= Footer ======= -->
 	<footer id="footer">
 		
